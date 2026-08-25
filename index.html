@@ -3,931 +3,391 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="NLP-AI for Health Communication (NLP4HC) — An ACL 2027 Workshop on NLP and AI for improving healthcare communication in multilingual and low-resource Indian language settings. Jointly organized by IIIT Hyderabad (LTRC) and CMC Vellore." />
-  <meta name="keywords" content="NLP, AI, Health, Indian Languages, ACL, Workshop, Healthcare Communication, Multilingual NLP, Low-resource NLP, IIIT Hyderabad, CMC Vellore" />
+  <meta name="description" content="NLP-AI4Health 2027 — 3rd Workshop on Integrating NLP for Multilingual and Patient-Centric Healthcare Communication. Jointly organized by IIIT Hyderabad (LTRC) and CMC Vellore. Co-located with ACL 2027." />
+  <meta name="keywords" content="NLP, AI, Health, Indian Languages, ACL 2027, Workshop, Healthcare Communication, Code-Mixed, Doctor-Patient Dialogue, IIIT Hyderabad, CMC Vellore, LTRC" />
   <meta name="author" content="LTRC IIIT Hyderabad & CMC Vellore" />
-  <meta property="og:title" content="NLP4HC Workshop @ ACL 2027" />
-  <meta property="og:description" content="Workshop on NLP and AI for Health Communication in Indian Languages" />
-  <meta property="og:type" content="website" />
-  <title>NLP4HC @ ACL 2027 — NLP-AI for Health Communication</title>
+  <title>NLP-AI4Health 2027 — 3rd Workshop on NLP & AI for Healthcare Communication</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>" />
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════════════════ NAVBAR -->
-<nav id="navbar" role="navigation" aria-label="Main Navigation">
-  <div class="container nav-inner">
-    <a href="#hero" class="nav-logo" id="nav-logo-link">
-      <div class="nav-logo-icon">🏥</div>
-      <div>
-        <div class="nav-logo-text">NLP4HC</div>
-        <div class="nav-logo-sub">ACL 2027 Workshop</div>
-      </div>
-    </a>
-
-    <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
-    <ul class="nav-links" id="nav-links-list">
-      <li><a href="#about"       id="nav-about">About</a></li>
-      <li><a href="#topics"      id="nav-topics">Topics</a></li>
-      <li><a href="#dates"       id="nav-dates">Dates</a></li>
-      <li><a href="#cfp"         id="nav-cfp">CFP</a></li>
-      <li><a href="#shared-tasks" id="nav-tasks">Shared Tasks</a></li>
-      <li><a href="#speakers"    id="nav-speakers">Speakers</a></li>
-      <li><a href="#organizers"  id="nav-organizers">Organizers</a></li>
-      <li><a href="#schedule"    id="nav-schedule">Schedule</a></li>
-      <li><a href="#submission"  id="nav-submission" class="nav-cta">Submit →</a></li>
-    </ul>
+<!-- ══════════════════════════════════════════ HEADER -->
+<header>
+  <h1>NLP-AI4Health 2027</h1>
+  <h2>3rd Workshop on Integrating Natural Language Processing for<br>
+      Multilingual and Patient-Centric Healthcare Communication</h2>
+  <p class="venue-info">
+    Co-located with ACL 2027 (Venue &amp; Dates TBA — ACL Joint Workshop Assignment: October 2026)
+  </p>
+  <div class="org-logos">
+    <span>&#127979; IIIT Hyderabad — LTRC</span>
+    <span>&#127973; CMC Vellore</span>
   </div>
+</header>
+
+<!-- ══════════════════════════════════════════ NAV -->
+<nav id="navbar">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#objectives">Objectives</a></li>
+    <li><a href="#cfp">Call for Papers</a></li>
+    <li><a href="#shared-tasks">Shared Tasks</a></li>
+    <li><a href="#dates">Important Dates</a></li>
+    <li><a href="#speakers">Invited Speakers</a></li>
+    <li><a href="#organizers">Organizers</a></li>
+    <li><a href="#submission">Submission</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
-<!-- ═══════════════════════════════════════════════════════ HERO -->
-<section id="hero" aria-label="Workshop Introduction">
-  <div class="hero-bg"></div>
-  <div class="container">
-    <div class="hero-content">
+<!-- ══════════════════════════════════════════ MAIN LAYOUT -->
+<div class="container">
 
-      <div class="hero-badge">
-        <span class="dot"></span>
-        Proposals Under Review · ACL Joint Call 2027
-      </div>
+  <!-- ─────────────────────────── MAIN CONTENT -->
+  <main>
 
-      <h1 class="hero-title">
-        NLP-AI for<br>
-        <span class="highlight">Health Communication</span>
-      </h1>
+    <!-- About -->
+    <section id="about">
+      <h3>About the Workshop</h3>
+      <p>
+        Natural Language Processing (NLP) and Artificial Intelligence (AI) hold immense potential to
+        transform healthcare communication, particularly in linguistically diverse and
+        resource-constrained environments. Jointly organized by <strong>CMC Vellore</strong> and
+        <strong>IIIT Hyderabad (LTRC)</strong>, the <strong>NLP-AI4Health</strong> workshop provides
+        an interdisciplinary platform to advance inclusive, accessible, and culturally aware language
+        technologies for healthcare.
+      </p>
+      <p>
+        Building upon the success of previous editions, this edition places a special focus on
+        <strong>code-mixed Indian language doctor-patient interactions</strong>. Real-world clinical
+        encounters in multilingual regions like India rarely occur in a single monolingual format;
+        instead, patients and healthcare providers frequently mix local languages (e.g., Hindi,
+        Bengali, Kannada, Marathi, Tamil, Telugu) with English medical terminology and local
+        colloquialisms. Processing such non-standard, code-mixed conversational data presents unique
+        computational challenges for information extraction, clinical documentation, and automated
+        dialogue understanding.
+      </p>
+      <p>
+        We invite research contributions on low-resource medical NLP, simplification of clinical
+        documents, speech-based tools for Electronic Health Records (EHRs), processing code-mixed
+        clinical dialogues, and ethically aligned, culturally sensitive health AI systems. The
+        workshop brings together NLP researchers, computer scientists, clinicians, healthcare
+        practitioners, and policy experts to co-create practical and impactful language solutions for
+        diverse healthcare settings.
+      </p>
+    </section>
 
-      <p class="hero-acronym">NLP4HC @ ACL 2027</p>
+    <!-- Objectives -->
+    <section id="objectives">
+      <h3>Workshop Objectives</h3>
+      <p>
+        The primary goal of <strong>NLP-AI4Health</strong> is to bridge the gap between computational
+        linguistics and clinical healthcare needs in multilingual and resource-constrained environments.
+      </p>
+      <ul>
+        <li><strong>Understand:</strong> Analyze real-world communication challenges and linguistic
+            complexities in code-mixed and low-resource doctor-patient interactions.</li>
+        <li><strong>Build:</strong> Develop computational tools and models to simplify, transcribe,
+            and translate patient-facing documents (e.g., consent forms, discharge summaries, and
+            prescriptions).</li>
+        <li><strong>Improve:</strong> Advance speech and text-based AI models for automated clinical
+            documentation, SOAP note generation, and multilingual Electronic Health Record (EHR)
+            entry.</li>
+        <li><strong>Promote:</strong> Foster collaborative interdisciplinary partnerships between
+            healthcare professionals, clinicians, NLP researchers, and policymakers.</li>
+        <li><strong>Organize:</strong> Host benchmark shared tasks on code-mixed Indian language
+            doctor-patient conversations to drive state-of-the-art research in low-resource health
+            NLP.</li>
+      </ul>
+    </section>
 
-      <p class="hero-desc">
-        A workshop bridging Natural Language Processing, Artificial Intelligence, and Healthcare —
-        with a focus on <strong>Indian languages</strong>, multilingual settings, and
-        low-resource communities.
+    <!-- Call for Papers -->
+    <section id="cfp">
+      <h3>Call for Papers</h3>
+      <p>
+        We invite original research papers, short papers, system descriptions, and non-archival
+        position papers on topics at the intersection of NLP, AI, and healthcare communication —
+        with particular emphasis on Indian languages and low-resource multilingual settings.
       </p>
 
-      <div class="hero-meta">
-        <div class="hero-meta-item">
-          <span class="icon">🌐</span>
-          <span>ACL Joint Call · EACL / COLING / NAACL / ACL / EMNLP 2027</span>
-        </div>
-        <div class="hero-meta-item">
-          <span class="icon">📅</span>
-          <span>Workshop Assignment: October 2026</span>
-        </div>
-        <div class="hero-meta-item">
-          <span class="icon">🏛️</span>
-          <span>IIIT Hyderabad (LTRC) &amp; CMC Vellore</span>
-        </div>
-      </div>
+      <h4>Research Topics of Interest</h4>
+      <ul class="topics-list">
+        <li><strong>Code-Mixed &amp; Conversational Health NLP:</strong> Processing, parsing, and
+            normalizing code-mixed doctor-patient dialogues in Indian languages.</li>
+        <li><strong>Clinical Information Extraction &amp; Term Identification:</strong> Named Entity
+            Recognition (NER) and Medical Term Identification (MTI) from spoken and transcribed
+            consultations.</li>
+        <li><strong>Automated Clinical Documentation:</strong> Dialogue-to-SOAP note generation,
+            clinical record synthesis, and automated discharge summary generation.</li>
+        <li><strong>Medical Dialogue Summarization:</strong> Abstractive and extractive summarization
+            of doctor-patient interactions.</li>
+        <li><strong>Low-Resource &amp; Multilingual Medical Machine Translation:</strong> Translation
+            of medical texts, patient queries, and clinical records across Indian languages.</li>
+        <li><strong>Medical Question Answering &amp; Dialogue Systems:</strong> Conversational AI,
+            virtual health assistants, and QA systems tailored to patient care.</li>
+        <li><strong>Health Misinformation &amp; Fact-Checking:</strong> Detection and mitigation of
+            health-related fake news and misinformation in regional languages.</li>
+        <li><strong>Speech-Based Health Tools:</strong> ASR, TTS, and voice-enabled EHR input tools
+            for low-literacy and clinical contexts.</li>
+        <li><strong>Ethics, Privacy &amp; Cultural Sensitivity in Health AI:</strong>
+            De-identification of patient data, bias mitigation, fairness, and safety in healthcare
+            AI.</li>
+      </ul>
 
-      <div class="hero-buttons">
-        <a href="#cfp" class="btn btn-primary" id="hero-cfp-btn">
-          📄 Call for Papers
-        </a>
-        <a href="#shared-tasks" class="btn btn-gold" id="hero-tasks-btn">
-          🏆 Shared Tasks
-        </a>
-        <a href="#dates" class="btn btn-outline" id="hero-dates-btn">
-          📅 Important Dates
-        </a>
+      <div class="note">
+        <strong>Note on Timeline:</strong> Important dates (submission deadlines, notification, and
+        camera-ready dates) will be finalized once the official workshop assignment is announced
+        under the ACL Joint Call (October 2026).
       </div>
+    </section>
 
-      <div class="hero-orgs">
-        <div class="hero-orgs-label">Jointly Organized By</div>
-        <div class="hero-orgs-logos">
-          <div class="org-chip">🏫 IIIT Hyderabad — LTRC</div>
-          <div class="org-chip">🏥 CMC Vellore</div>
-          <div class="org-chip">🤝 Co-located with ACL 2027</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ STATS BAR -->
-<div id="stats" aria-label="Workshop Statistics">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-item">
-        <div class="stat-number">22+</div>
-        <div class="stat-label">Official Indian Languages</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">2</div>
-        <div class="stat-label">Shared Tasks</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">5</div>
-        <div class="stat-label">Target Conferences</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">1B+</div>
-        <div class="stat-label">Potential Beneficiaries</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">2027</div>
-        <div class="stat-label">Workshop Year</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════ ABOUT -->
-<section id="about" aria-label="About the Workshop">
-  <div class="container">
-    <div class="text-center">
-      <div class="section-badge">About</div>
-      <h2 class="section-title">Why NLP4HC?</h2>
-      <p class="section-subtitle">
-        Healthcare access in India is deeply challenged by language barriers.
-        This workshop brings together researchers to build NLP and AI solutions
-        that make healthcare communication more inclusive.
+    <!-- Shared Tasks -->
+    <section id="shared-tasks">
+      <h3>Shared Tasks</h3>
+      <p>
+        <strong>Shared Task on Code-Mixed Indian Language Doctor-Patient Dialogue Processing<br>
+        (CM-DocHealth 2027)</strong>
       </p>
-    </div>
-
-    <div class="about-grid">
-      <div class="about-text">
-        <p>
-          India's linguistic diversity — with 22 scheduled languages and hundreds of dialects —
-          creates significant barriers in healthcare delivery. Patients often cannot communicate
-          effectively with healthcare providers, medical records are inaccessible, and
-          health information remains out of reach for millions.
-        </p>
-        <p>
-          The <strong>NLP4HC Workshop</strong> addresses this critical gap by fostering research
-          at the intersection of Natural Language Processing (NLP), Artificial Intelligence (AI),
-          and healthcare communication. We specifically focus on <strong>Indian languages</strong>
-          and other <strong>low-resource multilingual settings</strong>.
-        </p>
-        <p>
-          This workshop is proposed under the ACL Joint Call for Workshop Proposals 2027,
-          covering EACL, COLING, NAACL, ACL, and EMNLP 2027. Workshop assignments will be
-          announced in October 2026.
-        </p>
-
-        <div class="about-highlights">
-          <div class="highlight-item">
-            <div class="highlight-icon">🗣️</div>
-            <div>
-              <strong>Multilingual Health NLP</strong>
-              <span>Building language technology for 22+ Indian languages in medical contexts</span>
-            </div>
-          </div>
-          <div class="highlight-item">
-            <div class="highlight-icon">🤖</div>
-            <div>
-              <strong>AI for Clinical Communication</strong>
-              <span>LLMs, chatbots, and AI assistants tailored for Indian healthcare</span>
-            </div>
-          </div>
-          <div class="highlight-item">
-            <div class="highlight-icon">📊</div>
-            <div>
-              <strong>Shared Tasks &amp; Benchmarks</strong>
-              <span>Competitive evaluations to drive progress in Indian health NLP</span>
-            </div>
-          </div>
-          <div class="highlight-item">
-            <div class="highlight-icon">🌍</div>
-            <div>
-              <strong>Low-Resource Focus</strong>
-              <span>Special emphasis on under-served languages and communities</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-image-panel">
-        <img src="assets/images/hero-bg.png" alt="NLP4HC Workshop — NLP and AI for Health Communication" />
-        <div class="about-image-overlay">
-          <h4>Workshop Theme</h4>
-          <p>NLP-AI for Health Communication in Indian Languages — a multilingual, inclusive approach to healthcare AI</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ TOPICS -->
-<section id="topics" aria-label="Research Topics">
-  <div class="container">
-    <div class="text-center">
-      <div class="section-badge">Research Areas</div>
-      <h2 class="section-title">Topics of Interest</h2>
-      <p class="section-subtitle">
-        We welcome submissions across a broad range of topics that bridge NLP, AI, and healthcare — especially in Indian language contexts.
+      <p>
+        Real-world doctor-patient consultations in India are inherently code-mixed, capturing
+        spontaneous exchanges between clinicians and patients in regional languages combined with
+        English medical jargon. This edition's shared task introduces a benchmark dataset of
+        <strong>Code-Mixed Indian Language Doctor-Patient Dialogues</strong> across six major Indian
+        languages: Hindi, Bengali, Kannada, Marathi, Tamil, and Telugu.
       </p>
-    </div>
+      <p>Participants will be invited to tackle three sub-tasks:</p>
 
-    <div class="topics-grid">
-      <div class="topic-card">
-        <div class="topic-icon">🏥</div>
-        <h3>Clinical NLP &amp; Information Extraction</h3>
-        <p>Named entity recognition, relation extraction, and information retrieval from clinical notes and EMRs in Indian languages.</p>
+      <div class="task-block">
+        <h4>Sub-Task 1: Medical Term Identification (MTI) in Code-Mixed Conversations</h4>
+        <p>
+          Given code-mixed doctor-patient dialogue transcripts, participants must accurately identify,
+          extract, and categorize medical terms (e.g., symptoms, diagnoses, medications, anatomical
+          sites, and procedures).
+        </p>
+        <p>
+          <strong>Key Challenge:</strong> Handling non-standard spelling, colloquial disease
+          descriptors, code-switching between regional languages and English, and phonetic
+          transliterations.
+        </p>
       </div>
-      <div class="topic-card">
-        <div class="topic-icon">🌐</div>
-        <h3>Medical Machine Translation</h3>
-        <p>Translation of medical texts, discharge summaries, and patient communications across Indian languages and English.</p>
-      </div>
-      <div class="topic-card">
-        <div class="topic-icon">💬</div>
-        <h3>Health Dialogue Systems &amp; Chatbots</h3>
-        <p>Conversational AI for patient consultations, health queries, and symptom checking in multilingual settings.</p>
-      </div>
-      <div class="topic-card">
-        <div class="topic-icon">📖</div>
-        <h3>Medical Text Summarization</h3>
-        <p>Automatic summarization of patient records, clinical guidelines, and health literature for accessibility.</p>
-      </div>
-      <div class="topic-card">
-        <div class="topic-icon">🔍</div>
-        <h3>Health Misinformation Detection</h3>
-        <p>Identifying and countering health-related fake news, rumours, and misinformation in Indian social media.</p>
-      </div>
-      <div class="topic-card">
-        <div class="topic-icon">📋</div>
-        <h3>Medical Question Answering</h3>
-        <p>Building QA systems for health information retrieval in Indian languages for patients and clinicians.</p>
-      </div>
-      <div class="topic-card">
-        <div class="topic-icon">🧬</div>
-        <h3>Biomedical NLP for Indian Languages</h3>
-        <p>Adapting biomedical NLP tools and benchmarks to Indian language texts and code-mixed scenarios.</p>
-      </div>
-      <div class="topic-card">
-        <div class="topic-icon">🔊</div>
-        <h3>Speech &amp; Spoken Health Communication</h3>
-        <p>ASR, TTS, and spoken dialogue systems for healthcare in low-literacy and multilingual contexts.</p>
-      </div>
-      <div class="topic-card">
-        <div class="topic-icon">🛡️</div>
-        <h3>Ethics, Bias &amp; Fairness in Health AI</h3>
-        <p>Fairness, accountability, and transparency in AI systems deployed for Indian healthcare settings.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ═══════════════════════════════════════════════════════ DATES -->
-<section id="dates" aria-label="Important Dates">
-  <div class="container">
-    <div class="text-center">
-      <div class="section-badge">Timeline</div>
-      <h2 class="section-title">Important Dates</h2>
-      <p class="section-subtitle">
-        Dates are tentative and subject to change based on the ACL 2027 workshop assignment (announced October 2026).
+      <div class="task-block">
+        <h4>Sub-Task 2: Automated SOAP Note Generation from Clinical Dialogues</h4>
+        <p>
+          Given a doctor-patient interaction, participants must automatically structure the
+          conversation into a standardized clinical <strong>SOAP Note</strong>:
+        </p>
+        <ul>
+          <li><strong>S (Subjective):</strong> Patient's reported chief complaints and history.</li>
+          <li><strong>O (Objective):</strong> Vital signs, physical examination findings, and test results.</li>
+          <li><strong>A (Assessment):</strong> Preliminary or differential diagnosis.</li>
+          <li><strong>P (Plan):</strong> Prescribed treatment, medication, diagnostic tests, and follow-up advice.</li>
+        </ul>
+        <p>
+          <strong>Key Challenge:</strong> Synthesizing unstructured, code-mixed dialogue into formal,
+          structured medical summaries.
+        </p>
+      </div>
+
+      <div class="task-block">
+        <h4>Sub-Task 3: Medical Dialogue Summarization</h4>
+        <p>
+          Participants must generate concise, coherent, and clinically accurate summaries of
+          code-mixed doctor-patient consultations suitable for patient discharge sheets or physician
+          quick-reviews.
+        </p>
+        <p>
+          <strong>Key Challenge:</strong> Ensuring factual accuracy (hallucination prevention),
+          retaining critical clinical details, and summarizing code-mixed input into standardized
+          target outputs.
+        </p>
+      </div>
+
+      <div class="note">
+        Detailed task guidelines, evaluation metrics, baseline systems, and dataset release
+        timelines will be released soon.
+      </div>
+    </section>
+
+    <!-- Invited Speakers -->
+    <section id="speakers">
+      <h3>Invited Speakers</h3>
+      <p>
+        Speaker invitations are in progress. Confirmed keynote speakers will be announced after the
+        workshop assignment in October 2026.
+      </p>
+    </section>
+
+    <!-- Organizers -->
+    <section id="organizers">
+      <h3>Organizers</h3>
+      <p>
+        The workshop is jointly organized by the
+        <strong>Language Technologies Research Centre (LTRC), IIIT Hyderabad</strong> and
+        <strong>Christian Medical College (CMC), Vellore</strong>.
+      </p>
+      <p><em>Full organizer list to be updated soon.</em></p>
+
+      <h4>Program Committee</h4>
+      <p><em>Program Committee members will be announced after the workshop assignment.</em></p>
+    </section>
+
+    <!-- Submission Guidelines -->
+    <section id="submission">
+      <h3>Submission Guidelines</h3>
+      <p>
+        Submissions must follow the <strong>ACL formatting guidelines</strong> (LaTeX style files or
+        Word template). All submissions are double-blind reviewed and must be anonymized.
+      </p>
+      <ul>
+        <li><strong>Long Papers:</strong> up to 8 pages of content + unlimited references</li>
+        <li><strong>Short Papers:</strong> up to 4 pages of content + unlimited references</li>
+        <li><strong>Shared Task Papers:</strong> up to 4 pages + unlimited references</li>
+        <li><strong>Extended Abstracts (non-archival):</strong> up to 2 pages</li>
+      </ul>
+      <p>
+        The submission portal link (OpenReview / ARR) will be activated once the workshop is
+        assigned to a conference. ARR-reviewed papers may be committed to this workshop.
+        At least one author must register and present the accepted paper.
+      </p>
+      <div class="note">
+        All submissions must be in English. Research may cover any Indian language(s) including
+        code-mixed and transliterated data.
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>For general inquiries, paper submissions, or shared task queries, please write to:</p>
+      <ul>
+        <li><strong>General:</strong> <a href="mailto:nlp4hc-workshop@iiit.ac.in">nlp4hc-workshop@iiit.ac.in</a></li>
+        <li><strong>Submissions:</strong> <a href="mailto:nlp4hc-submissions@iiit.ac.in">nlp4hc-submissions@iiit.ac.in</a></li>
+        <li><strong>Shared Tasks:</strong> <a href="mailto:nlp4hc-tasks@iiit.ac.in">nlp4hc-tasks@iiit.ac.in</a></li>
+      </ul>
+      <p>
+        LTRC, IIIT Hyderabad, Gachibowli, Hyderabad — 500 032, India<br />
+        Christian Medical College, Ida Scudder Road, Vellore — 632 004, India
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ─────────────────────────── SIDEBAR -->
+  <aside>
+
+    <!-- Important Dates -->
+    <div class="sidebar-box" id="dates">
+      <h3>Important Dates</h3>
+      <ul class="date-list">
+        <li>
+          <strong>Workshop Assignment</strong><br />
+          October 2026 (ACL Joint Call)
+        </li>
+        <li>
+          <strong>Shared Task Registration</strong><br />
+          TBA (after assignment)
+        </li>
+        <li>
+          <strong>Paper Submission Deadline</strong><br />
+          TBA
+        </li>
+        <li>
+          <strong>Notification of Acceptance</strong><br />
+          TBA
+        </li>
+        <li>
+          <strong>Camera-Ready Papers Due</strong><br />
+          TBA
+        </li>
+        <li>
+          <strong>Workshop Day</strong><br />
+          2027 — Venue TBA
+        </li>
+      </ul>
+      <p style="font-size:0.85em; color:#666; font-family: Arial, Helvetica, sans-serif;">
         All deadlines are 11:59 PM Anywhere on Earth (AoE).
       </p>
     </div>
 
-    <div class="dates-timeline">
-
-      <div class="date-item">
-        <div class="date-dot"></div>
-        <div class="date-content">
-          <div class="date-label">Milestone 1</div>
-          <div class="date-title">Workshop Proposal Submission</div>
-          <div class="date-value">📅 TBA — ACL Joint Call 2027</div>
-          <div class="date-note">Submitted under the ACL Joint Call for Workshop Proposals</div>
-        </div>
-      </div>
-
-      <div class="date-item">
-        <div class="date-dot"></div>
-        <div class="date-content">
-          <div class="date-label">Milestone 2</div>
-          <div class="date-title">Workshop Assignment Announcement</div>
-          <div class="date-value">📅 October 2026</div>
-          <div class="date-note">Conference venue &amp; dates to be confirmed after assignment</div>
-        </div>
-      </div>
-
-      <div class="date-item">
-        <div class="date-dot gold"></div>
-        <div class="date-content">
-          <div class="date-label">Milestone 3</div>
-          <div class="date-title">Shared Task Registration Opens</div>
-          <div class="date-value">📅 TBA (after assignment)</div>
-          <div class="date-note">Open registration for all shared task participants</div>
-        </div>
-      </div>
-
-      <div class="date-item">
-        <div class="date-dot gold"></div>
-        <div class="date-content">
-          <div class="date-label">Milestone 4</div>
-          <div class="date-title">Paper Submission Deadline</div>
-          <div class="date-value">📅 TBA</div>
-          <div class="date-note">Long papers (8 pages) and short papers (4 pages) + references</div>
-        </div>
-      </div>
-
-      <div class="date-item">
-        <div class="date-dot gold"></div>
-        <div class="date-content">
-          <div class="date-label">Milestone 5</div>
-          <div class="date-title">Notification of Acceptance</div>
-          <div class="date-value">📅 TBA</div>
-          <div class="date-note">Review results communicated to all authors</div>
-        </div>
-      </div>
-
-      <div class="date-item">
-        <div class="date-dot gold"></div>
-        <div class="date-content">
-          <div class="date-label">Milestone 6</div>
-          <div class="date-title">Camera-Ready Papers Due</div>
-          <div class="date-value">📅 TBA</div>
-          <div class="date-note">Final version submission with author response incorporated</div>
-        </div>
-      </div>
-
-      <div class="date-item">
-        <div class="date-dot gold"></div>
-        <div class="date-content">
-          <div class="date-label">Milestone 7 — Main Event</div>
-          <div class="date-title">Workshop Day</div>
-          <div class="date-value">📅 2027 (Venue TBA)</div>
-          <div class="date-note">Co-located with EACL / COLING / NAACL / ACL / EMNLP 2027</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ CFP -->
-<section id="cfp" aria-label="Call for Papers">
-  <div class="container">
-    <div class="text-center">
-      <div class="section-badge">Submissions</div>
-      <h2 class="section-title">Call for Papers</h2>
-      <p class="section-subtitle">
-        We invite original research papers, system descriptions, and dataset papers on NLP and AI for health communication in Indian and other low-resource languages.
-      </p>
-    </div>
-
-    <div class="cfp-grid">
-      <div class="cfp-content">
-        <h3>Scope &amp; Areas</h3>
-        <p>
-          NLP4HC invites contributions from researchers and practitioners working at the intersection
-          of Natural Language Processing, Artificial Intelligence, and Healthcare — with a particular
-          emphasis on <strong>Indian languages</strong>, multilingual settings, and underserved communities.
-        </p>
-        <p>
-          We welcome papers on (but not limited to) the topics listed in the Topics section,
-          including technical papers, resource/dataset papers, and position papers.
-        </p>
-
-        <ul class="cfp-list">
-          <li>Original research papers on NLP/AI for health in Indian languages</li>
-          <li>Dataset and resource papers for medical NLP in low-resource languages</li>
-          <li>System description papers for deployed healthcare NLP systems</li>
-          <li>Shared task system description papers</li>
-          <li>Position papers on ethics, fairness, and societal impact of health AI</li>
-          <li>Survey and review papers on multilingual health NLP</li>
-        </ul>
-
-        <div style="margin-top:32px; display:flex; gap:12px; flex-wrap:wrap;">
-          <a href="#submission" class="btn btn-primary" id="cfp-submit-btn">📄 Submission Guidelines</a>
-          <a href="#shared-tasks" class="btn btn-outline" id="cfp-tasks-btn">🏆 Shared Tasks</a>
-        </div>
-      </div>
-
-      <div class="cfp-sidebar">
-        <div class="cfp-card">
-          <h4>📝 Paper Categories</h4>
-          <ul>
-            <li>Long Papers: up to 8 pages (+ references)</li>
-            <li>Short Papers: up to 4 pages (+ references)</li>
-            <li>Shared Task Papers: up to 4 pages (+ references)</li>
-            <li>Extended Abstracts: 2 pages (non-archival)</li>
-          </ul>
-        </div>
-
-        <div class="cfp-card">
-          <h4>📋 Submission Format</h4>
-          <ul>
-            <li>ACL Anthology format (LaTeX or Word)</li>
-            <li>Anonymous submissions (double-blind review)</li>
-            <li>OpenReview or ARR submission portal</li>
-            <li>Non-archival option available</li>
-          </ul>
-        </div>
-
-        <div class="cfp-card">
-          <h4>🌏 Languages of Interest</h4>
-          <ul>
-            <li>All 22 scheduled Indian languages</li>
-            <li>Hindi, Tamil, Telugu, Kannada, Malayalam</li>
-            <li>Bengali, Marathi, Gujarati, Punjabi, Odia</li>
-            <li>Code-mixed &amp; transliterated text</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ SHARED TASKS -->
-<section id="shared-tasks" aria-label="Shared Tasks">
-  <div class="container">
-    <div class="text-center">
-      <div class="section-badge">Competition</div>
-      <h2 class="section-title">Shared Tasks</h2>
-      <p class="section-subtitle">
-        NLP4HC will feature competitive shared tasks designed to benchmark progress in health NLP for Indian languages.
-        Task details and datasets will be released after the workshop assignment in October 2026.
-      </p>
-    </div>
-
-    <div class="tasks-grid">
-      <div class="task-card">
-        <div class="task-number">1</div>
-        <h3>Shared Task I</h3>
-        <p>
-          Details of Shared Task 1 will be announced after the workshop is officially assigned to a conference in October 2026.
-          The task will focus on a key NLP challenge in the health communication domain for Indian languages.
-        </p>
-        <p style="margin-top:12px; color: var(--text-muted); font-size:0.85rem;">
-          Participating teams will receive access to annotated datasets, evaluation scripts, and a dedicated task portal.
-        </p>
-        <span class="task-tag">🔒 Details Coming Soon</span>
-      </div>
-
-      <div class="task-card">
-        <div class="task-number">2</div>
-        <h3>Shared Task II</h3>
-        <p>
-          Details of Shared Task 2 will be announced after the workshop is officially assigned to a conference in October 2026.
-          This task will complement Task 1 and address a complementary challenge in multilingual health NLP.
-        </p>
-        <p style="margin-top:12px; color: var(--text-muted); font-size:0.85rem;">
-          Leaderboards, baseline systems, and evaluation guidelines will be provided to all registered participants.
-        </p>
-        <span class="task-tag">🔒 Details Coming Soon</span>
-      </div>
-    </div>
-
-    <div style="text-align:center; margin-top:40px;">
-      <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:20px;">
-        📬 Want to be notified when shared task details are released?
-      </p>
-      <a href="#contact" class="btn btn-gold" id="tasks-notify-btn">Get Notified → Contact Us</a>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ SPEAKERS -->
-<section id="speakers" aria-label="Invited Speakers">
-  <div class="container">
-    <div class="text-center">
-      <div class="section-badge">Keynotes</div>
-      <h2 class="section-title">Invited Speakers</h2>
-      <p class="section-subtitle">
-        We are in the process of confirming world-class researchers from NLP, AI, and Healthcare.
-        Speaker announcements will follow the workshop assignment in October 2026.
-      </p>
-    </div>
-
-    <div class="speakers-grid">
-      <!-- Placeholder speaker cards — replace with real speakers -->
-      <div class="speaker-card">
-        <div class="speaker-avatar">👨‍🔬</div>
-        <div class="speaker-name">Speaker TBA</div>
-        <div class="speaker-affil">Institution TBA</div>
-        <div class="speaker-talk">Talk title to be announced</div>
-      </div>
-      <div class="speaker-card">
-        <div class="speaker-avatar">👩‍⚕️</div>
-        <div class="speaker-name">Speaker TBA</div>
-        <div class="speaker-affil">Institution TBA</div>
-        <div class="speaker-talk">Talk title to be announced</div>
-      </div>
-      <div class="speaker-card">
-        <div class="speaker-avatar">👨‍💻</div>
-        <div class="speaker-name">Speaker TBA</div>
-        <div class="speaker-affil">Institution TBA</div>
-        <div class="speaker-talk">Talk title to be announced</div>
-      </div>
-      <div class="speaker-tba" style="grid-column: 1 / -1; padding: 32px;">
-        <span style="font-size:2rem;">📢</span>
-        <div>
-          <strong style="color:var(--white); display:block; margin-bottom:6px;">More speakers to be announced</strong>
-          Speaker invitations are in progress. Check back after October 2026 for confirmed keynote speakers.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ ORGANIZERS -->
-<section id="organizers" aria-label="Workshop Organizers">
-  <div class="container">
-    <div class="text-center">
-      <div class="section-badge">Team</div>
-      <h2 class="section-title">Workshop Organizers</h2>
-      <p class="section-subtitle">
-        The workshop is jointly organized by IIIT Hyderabad's Language Technologies Research Centre (LTRC) and CMC Vellore.
-      </p>
-    </div>
-
-    <div class="organizers-tabs">
-      <button class="tab-btn active" id="tab-organizers" onclick="switchTab('main-organizers')">Main Organizers</button>
-      <button class="tab-btn" id="tab-pc" onclick="switchTab('program-committee')">Program Committee</button>
-    </div>
-
-    <!-- Main Organizers -->
-    <div class="tab-panel active" id="main-organizers">
-      <div class="organizers-grid">
-        <!-- Replace these with real names when available -->
-        <div class="organizer-card">
-          <div class="organizer-avatar">LT</div>
-          <div class="organizer-info">
-            <div class="organizer-name">Organizer Name TBA</div>
-            <div class="organizer-role">Lead Organizer</div>
-            <div class="organizer-inst">LTRC, IIIT Hyderabad</div>
-          </div>
-        </div>
-        <div class="organizer-card">
-          <div class="organizer-avatar">LT</div>
-          <div class="organizer-info">
-            <div class="organizer-name">Organizer Name TBA</div>
-            <div class="organizer-role">Co-Organizer</div>
-            <div class="organizer-inst">LTRC, IIIT Hyderabad</div>
-          </div>
-        </div>
-        <div class="organizer-card">
-          <div class="organizer-avatar">CM</div>
-          <div class="organizer-info">
-            <div class="organizer-name">Organizer Name TBA</div>
-            <div class="organizer-role">Co-Organizer</div>
-            <div class="organizer-inst">CMC Vellore</div>
-          </div>
-        </div>
-        <div class="organizer-card">
-          <div class="organizer-avatar">CM</div>
-          <div class="organizer-info">
-            <div class="organizer-name">Organizer Name TBA</div>
-            <div class="organizer-role">Co-Organizer</div>
-            <div class="organizer-inst">CMC Vellore</div>
-          </div>
-        </div>
-      </div>
-      <p style="text-align:center; margin-top:24px; color:var(--text-muted); font-size:0.88rem;">
-        📝 Full organizer list will be updated soon. Please contact us for queries.
-      </p>
-    </div>
-
-    <!-- Program Committee -->
-    <div class="tab-panel" id="program-committee">
-      <div class="pc-grid" id="pc-grid">
-        <!-- PC members will be added here -->
-        <div class="pc-chip">
-          <div class="pc-chip-name">To be announced</div>
-          <div class="pc-chip-inst">PC members being confirmed</div>
-        </div>
-      </div>
-      <p style="text-align:center; margin-top:32px; color:var(--text-muted); font-size:0.88rem;">
-        💌 Interested in serving on the Program Committee?
-        <a href="#contact" style="color:var(--teal-light);">Contact us →</a>
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ SCHEDULE -->
-<section id="schedule" aria-label="Workshop Schedule">
-  <div class="container">
-    <div class="text-center">
-      <div class="section-badge">Program</div>
-      <h2 class="section-title">Workshop Schedule</h2>
-      <p class="section-subtitle">
-        The detailed program will be released after paper acceptance notifications.
-        Below is a tentative structure.
-      </p>
-    </div>
-
-    <div class="schedule-note">
-      ℹ️ This is a tentative schedule. Exact timings and speaker names will be updated closer to the event.
-    </div>
-
-    <div class="schedule-table-wrap">
-      <table class="schedule-table" aria-label="Tentative Workshop Schedule">
-        <thead>
-          <tr>
-            <th>Time (Local)</th>
-            <th>Event</th>
-            <th>Type</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="sched-time">09:00 – 09:15</td>
-            <td>Opening Remarks</td>
-            <td><span class="sched-type type-break">Opening</span></td>
-            <td>Welcome from organizers, workshop overview</td>
-          </tr>
-          <tr>
-            <td class="sched-time">09:15 – 10:00</td>
-            <td>Keynote Talk I</td>
-            <td><span class="sched-type type-keynote">Keynote</span></td>
-            <td>Speaker TBA</td>
-          </tr>
-          <tr>
-            <td class="sched-time">10:00 – 10:45</td>
-            <td>Keynote Talk II</td>
-            <td><span class="sched-type type-keynote">Keynote</span></td>
-            <td>Speaker TBA</td>
-          </tr>
-          <tr>
-            <td class="sched-time">10:45 – 11:00</td>
-            <td>Coffee Break</td>
-            <td><span class="sched-type type-break">Break</span></td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <td class="sched-time">11:00 – 12:30</td>
-            <td>Paper Presentations I</td>
-            <td><span class="sched-type type-paper">Papers</span></td>
-            <td>Accepted long papers (3 × 30 min)</td>
-          </tr>
-          <tr>
-            <td class="sched-time">12:30 – 14:00</td>
-            <td>Lunch Break</td>
-            <td><span class="sched-type type-break">Break</span></td>
-            <td>Poster Session during lunch</td>
-          </tr>
-          <tr>
-            <td class="sched-time">14:00 – 14:45</td>
-            <td>Keynote Talk III</td>
-            <td><span class="sched-type type-keynote">Keynote</span></td>
-            <td>Speaker TBA</td>
-          </tr>
-          <tr>
-            <td class="sched-time">14:45 – 15:45</td>
-            <td>Shared Task I — Results &amp; System Papers</td>
-            <td><span class="sched-type type-task">Shared Task</span></td>
-            <td>Leaderboard reveal + top system presentations</td>
-          </tr>
-          <tr>
-            <td class="sched-time">15:45 – 16:45</td>
-            <td>Shared Task II — Results &amp; System Papers</td>
-            <td><span class="sched-type type-task">Shared Task</span></td>
-            <td>Leaderboard reveal + top system presentations</td>
-          </tr>
-          <tr>
-            <td class="sched-time">16:45 – 17:00</td>
-            <td>Coffee Break</td>
-            <td><span class="sched-type type-break">Break</span></td>
-            <td>—</td>
-          </tr>
-          <tr>
-            <td class="sched-time">17:00 – 17:45</td>
-            <td>Panel Discussion</td>
-            <td><span class="sched-type type-panel">Panel</span></td>
-            <td>Future directions in NLP for Indian Health Communication</td>
-          </tr>
-          <tr>
-            <td class="sched-time">17:45 – 18:00</td>
-            <td>Closing Remarks &amp; Awards</td>
-            <td><span class="sched-type type-break">Closing</span></td>
-            <td>Best paper awards, acknowledgements</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ PAPERS -->
-<section id="papers" aria-label="Accepted Papers">
-  <div class="container">
-    <div class="text-center">
-      <div class="section-badge">Publications</div>
-      <h2 class="section-title">Accepted Papers</h2>
-      <p class="section-subtitle">
-        Accepted papers will appear here after the review process is complete.
-      </p>
-    </div>
-    <div class="papers-coming">
-      <div class="big-icon">📄</div>
-      <h3>Papers to be announced</h3>
-      <p>
-        The review process has not yet begun. Accepted papers will be listed here once
-        the workshop submission portal opens and reviews are completed.
-        All accepted papers will be published in the ACL Anthology.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ SUBMISSION -->
-<section id="submission" aria-label="Submission Guidelines">
-  <div class="container">
-    <div class="text-center">
-      <div class="section-badge">Guidelines</div>
-      <h2 class="section-title">Submission Guidelines</h2>
-      <p class="section-subtitle">
-        Please follow ACL formatting guidelines. The submission portal link will be activated once the workshop is assigned to a conference.
-      </p>
-    </div>
-
-    <div class="submission-grid">
-      <div class="submission-card">
-        <h3>📋 Formatting Requirements</h3>
-        <ul>
-          <li>Use the official ACL LaTeX style files or Word template</li>
-          <li>All submissions must be anonymized (double-blind review)</li>
-          <li>Long papers: up to 8 pages of content + unlimited references</li>
-          <li>Short papers: up to 4 pages of content + unlimited references</li>
-          <li>Shared task papers: up to 4 pages + unlimited references</li>
-          <li>Extended abstracts (non-archival): up to 2 pages</li>
-          <li>Figures and tables count towards the page limit</li>
-          <li>Font size must be 11pt (as per ACL template)</li>
-        </ul>
-      </div>
-
-      <div class="submission-card">
-        <h3>📌 Submission Policies</h3>
-        <ul>
-          <li>Papers must not be under review or accepted elsewhere at time of submission</li>
-          <li>Previously published work may be submitted as non-archival</li>
-          <li>ARR-reviewed papers may be committed to NLP4HC</li>
-          <li>Multiple submissions from the same team allowed for different tasks</li>
-          <li>At least one author must register and present the accepted paper</li>
-          <li>Findings papers from *ACL venues are welcome to present</li>
-          <li>Ethical considerations should be addressed in the paper</li>
-          <li>Contact us for accessibility accommodations</li>
-        </ul>
-      </div>
-
-      <div class="submission-card">
-        <h3>🔗 Submission Portal</h3>
-        <ul>
-          <li>Submissions via OpenReview or ARR (to be confirmed)</li>
-          <li>Portal link will be activated after workshop assignment</li>
-          <li>Email submission is NOT accepted</li>
-          <li>Create an OpenReview/ARR account in advance</li>
-        </ul>
-        <div style="margin-top:20px;">
-          <a href="#contact" class="btn btn-outline" style="font-size:0.88rem; padding:10px 20px;" id="submission-contact-btn">
-            📬 Questions? Contact Us
-          </a>
-        </div>
-      </div>
-
-      <div class="submission-card">
-        <h3>🌐 Language Policy</h3>
-        <ul>
-          <li>Submissions must be in English</li>
-          <li>Research may focus on any Indian language(s)</li>
-          <li>Code-mixed and transliterated data is encouraged</li>
-          <li>Multilingual papers covering 2+ languages are especially welcome</li>
-          <li>Data and examples in Indian scripts should be clearly rendered</li>
-          <li>Include Unicode fonts if using non-Latin scripts in PDFs</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ CONTACT -->
-<section id="contact" aria-label="Contact Us">
-  <div class="container">
-    <div class="text-center">
-      <div class="section-badge">Get in Touch</div>
-      <h2 class="section-title">Contact Us</h2>
-      <p class="section-subtitle">
-        Have questions about the workshop, shared tasks, or submissions? We'd love to hear from you.
-      </p>
-    </div>
-
-    <div class="contact-grid">
-      <div class="contact-info">
-        <div class="contact-item">
-          <div class="contact-icon">📧</div>
-          <div>
-            <h4>General Inquiries</h4>
-            <p>For general questions about the workshop:</p>
-            <a href="mailto:nlp4hc-workshop@iiit.ac.in" id="contact-email-general">nlp4hc-workshop@iiit.ac.in</a>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">📋</div>
-          <div>
-            <h4>Paper Submissions</h4>
-            <p>Submission-related queries:</p>
-            <a href="mailto:nlp4hc-submissions@iiit.ac.in" id="contact-email-submissions">nlp4hc-submissions@iiit.ac.in</a>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">🏆</div>
-          <div>
-            <h4>Shared Tasks</h4>
-            <p>Shared task registration and queries:</p>
-            <a href="mailto:nlp4hc-tasks@iiit.ac.in" id="contact-email-tasks">nlp4hc-tasks@iiit.ac.in</a>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">🏛️</div>
-          <div>
-            <h4>Organizing Institutions</h4>
-            <p>
-              LTRC, IIIT Hyderabad<br>
-              Gachibowli, Hyderabad — 500 032, India
-            </p>
-            <p style="margin-top:8px;">
-              Christian Medical College, Vellore<br>
-              Ida Scudder Road, Vellore — 632 004, India
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-form-card">
-        <h3>✉️ Send us a Message</h3>
-        <form id="contact-form" onsubmit="handleContactForm(event)" novalidate>
-          <div class="form-group">
-            <label for="contact-name">Your Name *</label>
-            <input type="text" id="contact-name" name="name" placeholder="Dr. / Mr. / Ms. Your Name" required />
-          </div>
-          <div class="form-group">
-            <label for="contact-email">Email Address *</label>
-            <input type="email" id="contact-email" name="email" placeholder="you@institution.edu" required />
-          </div>
-          <div class="form-group">
-            <label for="contact-subject">Subject *</label>
-            <select id="contact-subject" name="subject" required>
-              <option value="" disabled selected>Select a subject</option>
-              <option value="general">General Inquiry</option>
-              <option value="cfp">Call for Papers</option>
-              <option value="shared-task">Shared Task Registration</option>
-              <option value="pc">Program Committee</option>
-              <option value="speaker">Invited Speaker</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="contact-message">Message *</label>
-            <textarea id="contact-message" name="message" placeholder="Your message here..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width:100%; justify-content:center;">
-            Send Message →
-          </button>
-        </form>
-        <p id="form-success-msg" style="display:none; margin-top:16px; color:var(--teal-light); text-align:center; font-size:0.9rem;">
-          ✅ Thank you! Your message has been noted. We will get back to you soon.
-        </p>
-        <p style="margin-top:12px; color:var(--text-muted); font-size:0.78rem; text-align:center;">
-          Note: This form collects your message for the organizers. Please also send an email to the addresses above for urgent queries.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ FOOTER -->
-<footer id="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-logo">NLP4HC @ ACL 2027</div>
-
-      <ul class="footer-links">
-        <li><a href="#about"        id="footer-about">About</a></li>
-        <li><a href="#cfp"          id="footer-cfp">CFP</a></li>
-        <li><a href="#dates"        id="footer-dates">Dates</a></li>
-        <li><a href="#shared-tasks" id="footer-tasks">Shared Tasks</a></li>
-        <li><a href="#speakers"     id="footer-speakers">Speakers</a></li>
-        <li><a href="#organizers"   id="footer-organizers">Organizers</a></li>
-        <li><a href="#submission"   id="footer-submission">Submissions</a></li>
-        <li><a href="#contact"      id="footer-contact">Contact</a></li>
-        <li><a href="https://github.com/ltrc/NLP4Health-Communication" target="_blank" rel="noopener" id="footer-github">GitHub</a></li>
+    <!-- News -->
+    <div class="sidebar-box">
+      <h3>News &amp; Updates</h3>
+      <ul class="date-list">
+        <li>
+          <strong>Aug 2026:</strong> Workshop website launched.
+        </li>
+        <li>
+          <strong>Oct 2026:</strong> Workshop assignment announcement expected.
+        </li>
       </ul>
+    </div>
 
-      <p class="footer-copy">
-        © 2026–2027 NLP4HC Workshop · LTRC, IIIT Hyderabad &amp; CMC Vellore ·
-        Co-located with ACL 2027 · All rights reserved.<br>
-        Workshop proposed under the ACL Joint Call for Workshop Proposals 2027.
+    <!-- Shared Tasks Quick Info -->
+    <div class="sidebar-box">
+      <h3>Shared Tasks</h3>
+      <p style="font-family: Arial, Helvetica, sans-serif; font-size:0.9em;">
+        <strong>CM-DocHealth 2027</strong><br />
+        Code-Mixed Doctor-Patient Dialogue Processing
+      </p>
+      <ul style="font-family: Arial, Helvetica, sans-serif; font-size:0.9em; padding-left:16px;">
+        <li>Sub-Task 1: Medical Term Identification</li>
+        <li>Sub-Task 2: SOAP Note Generation</li>
+        <li>Sub-Task 3: Dialogue Summarization</li>
+      </ul>
+      <p style="font-family: Arial, Helvetica, sans-serif; font-size:0.85em; color:#666;">
+        Languages: Hindi, Bengali, Kannada, Marathi, Tamil, Telugu
       </p>
     </div>
-  </div>
+
+    <!-- Previous Editions -->
+    <div class="sidebar-box">
+      <h3>Previous Editions</h3>
+      <ul style="font-family: Arial, Helvetica, sans-serif; font-size:0.9em; padding-left:16px;">
+        <li>
+          <a href="#">NLP-AI4Health 2025</a><br />
+          <span style="color:#666; font-size:0.9em;">@ IJCNLP-AACL 2025</span>
+        </li>
+        <li>
+          <a href="#">NLP-AI4Health 2024</a><br />
+          <span style="color:#666; font-size:0.9em;">Previous edition</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Organized by -->
+    <div class="sidebar-box">
+      <h3>Organized By</h3>
+      <p style="font-family: Arial, Helvetica, sans-serif; font-size:0.9em;">
+        <strong>LTRC, IIIT Hyderabad</strong><br />
+        Gachibowli, Hyderabad — 500 032<br />
+        India
+      </p>
+      <p style="font-family: Arial, Helvetica, sans-serif; font-size:0.9em; margin-top:10px;">
+        <strong>CMC Vellore</strong><br />
+        Ida Scudder Road, Vellore — 632 004<br />
+        India
+      </p>
+    </div>
+
+  </aside>
+
+</div><!-- end .container -->
+
+<!-- ══════════════════════════════════════════ FOOTER -->
+<footer id="footer">
+  <p>
+    &copy; 2026&ndash;2027 NLP-AI4Health Workshop &bull;
+    LTRC, IIIT Hyderabad &amp; CMC Vellore &bull;
+    Co-located with ACL 2027
+  </p>
+  <p>
+    Proposed under the ACL Joint Call for Workshop Proposals 2027 &bull;
+    <a href="https://github.com/ltrc/NLP4Health-Communication" target="_blank" rel="noopener">
+      GitHub Repository
+    </a>
+  </p>
 </footer>
 
-<!-- Back to Top -->
-<button id="back-to-top" aria-label="Back to top">↑</button>
-
-<script src="assets/js/main.js"></script>
 </body>
 </html>
