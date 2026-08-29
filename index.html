@@ -16,7 +16,325 @@
   <meta name="keywords" content="NLP, AI, Health, Indian Languages, ACL 2027, Workshop, Healthcare Communication, Code-Mixed, Doctor-Patient Dialogue, IIIT Hyderabad, CMC Vellore, LTRC" />
   <meta name="author" content="LTRC IIIT Hyderabad & CMC Vellore" />
   <title>NLP4Healthcare 2027 — 3rd Workshop on NLP & AI for Healthcare Communication</title>
-  <link rel="stylesheet" href="style.css" />
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NLP4Healthcare 2027 — 3rd Workshop on Integrating NLP for Multilingual Healthcare Communication. Jointly organized by IIIT Hyderabad (LTRC) and CMC Vellore. Proposed under ACL 2027." />
+  <meta name="keywords" content="NLP, AI, Health, Indian Languages, ACL 2027, Workshop, Healthcare Communication, Code-Mixed, Doctor-Patient Dialogue, IIIT Hyderabad, CMC Vellore, LTRC" />
+  <meta name="author" content="LTRC IIIT Hyderabad & CMC Vellore" />
+  <title>NLP4Healthcare 2027 — 3rd Workshop on NLP & AI for Healthcare Communication</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════ HEADER -->
+<header>
+  <h1>NLP4Healthcare 2027</h1>
+  <h2>3rd Workshop on Integrating Natural Language Processing for<br>
+      Multilingual Healthcare Communication</h2>
+  <p class="venue-info">
+    Proposed under the ACL Joint Call for Workshop Proposals 2027
+  </p>
+  <div class="org-logos">
+    <span>Language Technologies Research Centre (LTRC), IIIT Hyderabad &amp; Christian Medical College (CMC), Vellore</span>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════ NAV -->
+<nav id="navbar">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#scope">Scope</a></li>
+    <li><a href="#objectives">Objectives</a></li>
+    <li><a href="#shared-tasks">Shared Tasks</a></li>
+    <li><a href="#pc">Program Committee</a></li>
+    <li><a href="#dates">Important Dates</a></li>
+    <li><a href="#organizers">Organizers</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════════════════════════════ MAIN LAYOUT -->
+<div class="container">
+
+  <!-- ─────────────────────────── MAIN CONTENT -->
+  <main>
+
+    <!-- About -->
+    <section id="about">
+      <h3>About the NLP4Healthcare</h3>
+      <p>
+        Healthcare communication is fundamentally a language problem as well as a clinical one. In multilingual and resource-constrained settings, patients may describe symptoms using regional languages, colloquial expressions, non-standard spellings, and code-mixed speech, while clinicians must transform these interactions into accurate and actionable clinical records. Yet much of clinical language technology is developed and evaluated on relatively clean, predominantly monolingual text, leaving a substantial gap between benchmark conditions and real-world communication.
+      </p>
+      <p>
+        <strong>NLP4Healthcare 2027</strong> addresses this gap by bringing together researchers in natural language processing, computational linguistics, speech and language technologies, artificial intelligence, and healthcare. The workshop focuses on <strong>multilingual, patient-centred, culturally aware, and clinically useful language technologies</strong>, with particular emphasis on Indian languages and real-world clinical communication.
+      </p>
+      <p>
+        The 2027 edition places a special focus on <strong>code-mixed Indian-language doctor–patient dialogues</strong>. Clinical encounters in India may involve rapid switching between regional languages and English medical terminology, together with conversational phenomena that are difficult to represent using conventional NLP pipelines. Such data raise research questions in clinical information extraction, dialogue understanding, documentation, summarization, speech processing, translation, evaluation, and responsible deployment.
+      </p>
+    </section>
+
+    <!-- Scope -->
+    <section id="scope">
+      <h3>Scope</h3>
+      <p>
+        We invite original research papers, short papers, system descriptions, and non-archival position papers addressing the intersection of NLP, AI, speech, and healthcare communication. Topics include, but are not limited to:
+      </p>
+      <ul class="topics-list">
+        <li>Clinical information extraction, medical entity recognition, term identification, normalization, and relation extraction from clinical conversations.</li>
+        <li>Clinical dialogue understanding, including conversational structure, symptom and medication understanding, and clinically relevant dialogue phenomena.</li>
+        <li>Automated clinical documentation, including dialogue-to-SOAP generation, clinical record synthesis, and discharge-summary generation.</li>
+        <li>Medical dialogue summarization with emphasis on factuality, completeness, and preservation of clinically important information.</li>
+        <li>Multilingual and low-resource medical machine translation across Indian and other underrepresented languages.</li>
+        <li>Medical question answering, patient-facing dialogue systems, and multilingual health-information access.</li>
+        <li>Speech technologies for healthcare, including ASR, TTS, spoken-language understanding, and voice-enabled clinical documentation.</li>
+        <li>Health misinformation detection, verification, and mitigation in regional languages.</li>
+        <li>Ethics, privacy, safety, fairness, bias, de-identification, and cultural sensitivity in healthcare NLP and AI.</li>
+        <li>Datasets, benchmarks, annotation methodologies, evaluation frameworks, and real-world deployment studies.</li>
+      </ul>
+    </section>
+
+    <!-- Objectives -->
+    <section id="objectives">
+      <h3>Objectives</h3>
+      <ul>
+        <li><strong>Characterize</strong> linguistic and clinical challenges in multilingual and code-mixed healthcare communication.</li>
+        <li><strong>Advance methods</strong> for extracting, structuring, translating, summarizing, and generating clinically useful information from spoken and written interactions.</li>
+        <li><strong>Establish benchmarks</strong> that evaluate models under realistic low-resource and code-mixed conditions.</li>
+        <li><strong>Connect communities</strong> of NLP researchers, clinicians, speech researchers, healthcare practitioners, and related stakeholders.</li>
+        <li><strong>Promote responsible research</strong> that explicitly addresses privacy, safety, fairness, and cultural appropriateness.</li>
+      </ul>
+    </section>
+
+    <!-- Shared Tasks -->
+    <section id="shared-tasks">
+      <h3>Shared Task: Code-Mixed Indian Language Doctor–Patient Dialogue Processing</h3>
+      <p>
+        The shared task is designed as a central empirical component of the workshop. It introduces a benchmark of <strong>code-mixed doctor–patient dialogues</strong> across six Indian languages: <strong>Hindi, Bengali, Kannada, Marathi, Tamil, and Telugu</strong>. The tasks are deliberately complementary: they test whether systems can first identify clinically meaningful language, then structure the interaction into a clinical representation, and finally produce a concise clinically useful summary.
+      </p>
+
+      <div class="task-block">
+        <h4>Sub-Task 1: Medical Term Identification (MTI) in Code-Mixed Conversations</h4>
+        <p>
+          Given code-mixed doctor-patient dialogue transcripts, participants must accurately identify, extract, and categorize medical terms (symptoms, diagnoses, medications, anatomical sites, procedures).
+        </p>
+      </div>
+
+      <div class="task-block">
+        <h4>Sub-Task 2: Automated SOAP Note Generation from Clinical Dialogues</h4>
+        <p>
+          Participants automatically structure unstructured doctor-patient interactions into standardized clinical SOAP notes:
+        </p>
+        <ul>
+          <li><strong>S (Subjective):</strong> Patient's reported chief complaints and history.</li>
+          <li><strong>O (Objective):</strong> Vital signs, physical exam findings, test results.</li>
+          <li><strong>A (Assessment):</strong> Preliminary or differential diagnosis.</li>
+          <li><strong>P (Plan):</strong> Prescribed treatment, medication, tests, follow-up.</li>
+        </ul>
+      </div>
+
+      <div class="task-block">
+        <h4>Sub-Task 3: Medical Dialogue Summarization</h4>
+        <p>
+          Generate concise, coherent, and clinically accurate summaries suitable for physician quick-review or discharge documentation.
+        </p>
+      </div>
+
+      <div class="note">
+        Detailed task guidelines, evaluation metrics, baseline systems, dataset release timelines, and participant estimates will be released soon.
+      </div>
+    </section>
+
+    <!-- Program Committee -->
+    <section id="pc">
+      <h3>Proposed Program Committee</h3>
+      <p>
+        The following researchers were contacted regarding participation on the Program Committee.
+      </p>
+      <ol class="twocol">
+        <li>Dr. Susmitha Wunnava</li>
+        <li>Prof. Ramakanth Kavuluru</li>
+        <li>Dr. Sonish Sivarajkumar</li>
+        <li>Dr. Parag R. Rindani</li>
+        <li>Dr. Migual</li>
+        <li>Prof. Joshua August (Gus) Skorburg</li>
+        <li>Prof. Kieran O'Doherty</li>
+        <li>Kristina L. Kupferschmidt</li>
+        <li>Prof. Tanmoy</li>
+        <li>Dr. Soumya</li>
+        <li>Dr. Ashwath</li>
+        <li>Dr. Asif</li>
+        <li>Dr. WonJin Yoon</li>
+        <li>Dr. Sunil Kumar Sahu</li>
+        <li>Dr. Kalpana Raja</li>
+        <li>Dr. Qiao Jin</li>
+        <li>Prof. Sriparna Saha</li>
+        <li>Dr. Kalika Bali</li>
+        <li>Dr. Shad</li>
+        <li>Dr. Mei-Hua Hall</li>
+        <li>Karunesh Arora</li>
+        <li>Dipankar, Jadavpur</li>
+        <li>Sunayana</li>
+        <li>Tathagata Raha</li>
+      </ol>
+      <div class="note">
+        <strong>Important:</strong> ACL requests an indication of which PC members have agreed and recommends planning for approximately three reviews per paper while avoiding more than three papers per reviewer.
+      </div>
+    </section>
+
+    <!-- Organizers -->
+    <section id="organizers">
+      <h3>Organizers</h3>
+      <p>The workshop is jointly organized by:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Affiliation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Arafat Ahsan</td>
+            <td>IIIT Hyderabad</td>
+          </tr>
+          <tr>
+            <td>Balukrishna S</td>
+            <td>CMC Vellore</td>
+          </tr>
+          <tr>
+            <td>Dipti Misra Sharma</td>
+            <td>IIIT Hyderabad</td>
+          </tr>
+          <tr>
+            <td>Hannah Thomas</td>
+            <td>CMC Vellore</td>
+          </tr>
+          <tr>
+            <td>Joy Mammen</td>
+            <td>CMC Vellore</td>
+          </tr>
+          <tr>
+            <td>Parameswari Krishnamurthy</td>
+            <td>IIIT Hyderabad</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>For general inquiries, paper submissions, or shared task queries, please write to:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:nlpai4health@gmail.com">nlpai4health@gmail.com</a>, <a href="mailto:ltrc.office1@iiit.ac.in">ltrc.office1@iiit.ac.in</a></li>
+      </ul>
+      <p>
+        <strong>LTRC, IIIT Hyderabad:</strong> Gachibowli, Hyderabad — 500 032, India<br />
+        <strong>CMC Vellore:</strong> Ida Scudder Road, Vellore — 632 004, India
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ─────────────────────────── SIDEBAR -->
+  <aside>
+
+    <!-- Important Dates -->
+    <div class="sidebar-box" id="dates">
+      <h3>Important Dates</h3>
+      <ul class="date-list">
+        <li>
+          <strong>Proposal Deadline</strong><br />
+          September 4, 2026
+        </li>
+        <li>
+          <strong>Proposal Notification</strong><br />
+          October 2, 2026
+        </li>
+        <li>
+          <strong>Direct Paper Deadline</strong><br />
+          April 25, 2027 (Tentative)
+        </li>
+        <li>
+          <strong>Notification of Acceptance</strong><br />
+          May 22, 2027
+        </li>
+        <li>
+          <strong>Camera-Ready Papers Due</strong><br />
+          June 12, 2027
+        </li>
+        <li>
+          <strong>Proceedings Due</strong><br />
+          July 3, 2027
+        </li>
+        <li>
+          <strong>Workshop Days</strong><br />
+          August 21–22, 2027
+        </li>
+      </ul>
+      <p style="font-size:0.85em; color:#666; font-family: Arial, Helvetica, sans-serif;">
+        All deadlines are 11:59 PM Anywhere on Earth (AoE).
+      </p>
+    </div>
+
+
+    <!-- Previous Editions -->
+    <div class="sidebar-box">
+      <h3>Previous Editions</h3>
+      <ul style="font-family: Arial, Helvetica, sans-serif; font-size:0.9em; padding-left:16px;">
+        <li>
+          <a href="https://nlp-for-healthcare.github.io/2025/" target="_blank" rel="noopener noreferrer">
+            NLP-AI4Health 2025
+          </a><br />
+          <span style="color:#666; font-size:0.9em;">@ IJCNLP-AACL 2025</span>
+        </li>
+        <li>
+          <a href="https://ltrc.iiit.ac.in/icon2024-nlp-ai4health/" target="_blank" rel="noopener noreferrer">
+            NLP-AI4Health 2024
+          </a><br />
+          <span style="color:#666; font-size:0.9em;">@ ICON 2024</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Organized by -->
+    <div class="sidebar-box">
+      <h3>Organized By</h3>
+      <p style="font-family: Arial, Helvetica, sans-serif; font-size:0.9em;">
+        <strong>LTRC, IIIT Hyderabad</strong><br />
+        Gachibowli, Hyderabad — 500 032, India
+      </p>
+      <p style="font-family: Arial, Helvetica, sans-serif; font-size:0.9em; margin-top:10px;">
+        <strong>CMC Vellore</strong><br />
+        Ida Scudder Road, Vellore — 632 004, India
+      </p>
+    </div>
+
+  </aside>
+
+</div><!-- end .container -->
+
+<!-- ══════════════════════════════════════════ FOOTER -->
+<footer id="footer">
+  <p>
+    &copy; 2026&ndash;2027 NLP4Healthcare Workshop &bull;
+    LTRC, IIIT Hyderabad &amp; CMC Vellore &bull;
+    Co-located with ACL 2027
+  </p>
+  <p>
+    Proposed under the ACL Joint Call for Workshop Proposals 2027 &bull;
+    <a href="https://github.com/PLURAL-LAB/NLP-AI4-Health" target="_blank" rel="noopener">
+      GitHub Repository
+    </a>
+  </p>
+</footer>
+
+</body>
+</html>
+
 </head>
 <body>
 
